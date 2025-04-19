@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   padding: 20px;
@@ -29,9 +29,9 @@ main {
 .post {
   background: white;
   padding: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .post h2 {
@@ -39,16 +39,36 @@ main {
   color: #4e73df;
 }
 
-iframe {
+/* Iframe dari S3 */
+.post-frame {
   width: 100%;
+  max-width: 800px;
   height: 400px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Gambar dari S3 */
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 0.9em;
   color: #777;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .post-frame {
+      height: 300px;
+  }
 }
