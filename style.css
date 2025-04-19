@@ -53,7 +53,7 @@ main {
 /* Gambar dari S3 */
 .post-image {
   max-width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
